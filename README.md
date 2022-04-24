@@ -19,7 +19,7 @@ def load_images_from_folder(folder):
       images.append(img_gray)
   return images
 ```
-* Output
+* Output  
 ![](https://i.imgur.com/Uft2DXe.png)
 
 
@@ -36,7 +36,7 @@ plt.ylabel("# of Pixels")
 plt.plot(hist)
 plt.xlim([0, 255])
 ```
-* news影片中某個frame的bins分佈之折線圖
+* news影片中某個frame的bins分佈之折線圖  
 ![](https://i.imgur.com/t8qI6C5.png)
 
 
@@ -62,12 +62,12 @@ def shot_change_frames(self):
           self.shot_frames.append(i+1)
     return self.shot_frames
 ```
-* Result
+* Result  
 ![](https://i.imgur.com/qeGDLd4.png)
 
 ### Edge detection
-> 原理：使用 Edge change ratio來偵測 shot change
 ---
+> 原理：使用 Edge change ratio來偵測 shot change
 * 實作 & 程式講解
 1. 影像轉成灰階(同Histogram)
 2. 計算第`i`個frame 與 第`i+1`個frame的ECR
